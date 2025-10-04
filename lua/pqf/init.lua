@@ -162,8 +162,6 @@ function M.format(info)
       text = fn.substitute(item.text, '\n\\s*', ' ', 'g')
     end
 
-    text = fn.trim(text)
-
     if text ~= '' then
       location = pad_right(location, pad_to)
     end
